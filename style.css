@@ -1,0 +1,717 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.nav {
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.znak_1:hover {
+    filter: brightness(40%);
+}
+
+.razmer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_button_f {
+    width: 26px;
+    min-height: 26px;
+    position: relative;
+}
+
+.search_button {
+    position: absolute;
+    border: none;
+    display: none;
+    top: 10px;
+    left: 70px;
+}
+
+.search_button_f:hover .search_button {
+    display: block;
+}
+
+
+.spisok_assortimenta {
+    display: none;
+    position: absolute;
+    background-color: white;
+    max-width: 232px;
+    width: 100%;
+    top: 80px;
+    right: 0;
+    list-style-type: none;
+    padding: 16px 33px;
+    z-index: 20;
+
+}
+
+.menu_checkbox:checked~ul {
+    visibility: visible;
+}
+
+
+.menu_checkbox {
+    display: none;
+}
+
+.menu_vipodauwie_list {
+    margin: 9px 0 24px 0;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.menu_vipodauwie_pynct {
+    margin: 11px 0 11px 0;
+    position: relative;
+}
+
+.menu_vipodauwie_pynct_close::before,
+.menu_vipodauwie_pynct_close::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 3px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    right: 0;
+    position: absolute;
+}
+
+.menu_vipodauwie_pynct_close::after {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.menu_vipodauwie_pynct>a {
+    list-style-type: none;
+    margin: 11px 0 11px 0;
+    color: #F16D7F;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.pod_pynct {
+    list-style-type: none;
+    padding-left: 20px;
+
+}
+
+.spisok_nav_2:hover .spisok_assortimenta {
+    display: block;
+}
+
+.spisok_nav {
+    display: flex;
+    padding: 19px 230px 19px 230px;
+}
+
+.spisok_nav_2 {
+    display: flex;
+    position: relative;
+    padding: 19px 230px 19px 230px;
+
+}
+
+.znak_2_picture {
+    padding: 10px 0 0 41px;
+}
+
+.znak_3_picture {
+    padding-top: 7px;
+}
+
+.znak_4_picture {
+    padding: 0 41px 0 41px;
+}
+
+.znak_5 {
+    position: relative;
+}
+
+.znak_5::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    position: absolute;
+    top: -20px;
+    left: 25px;
+
+}
+
+.zastavka {
+    background-color: #F1E4E6;
+    max-width: 1600px;
+    display: flex;
+}
+
+.picture_zastawka {
+    width: 50%;
+}
+
+.title_list {
+    align-self: center;
+    margin-left: 91px;
+    width: 100%;
+}
+
+.logo_header {
+    font-family: 'Lato';
+    display: block;
+    max-width: 377px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 49px;
+    line-height: 51.6px;
+    color: #222222;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.logo_header::before {
+    content: "";
+    display: block;
+    height: 92px;
+    width: 12px;
+    background-color: #F16D7F;
+    position: absolute;
+    top: 0;
+    left: -28px;
+}
+
+.text_header {
+    font-family: 'Lato';
+    font-style: normal;
+    color: #222222;
+    display: block;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+}
+
+.text_header span {
+    color: hsl(352, 83%, 69%);
+}
+
+
+.section_2 {
+    margin: 0 230px;
+}
+
+.spisok_gallary {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin: 65px 230px 96px 230px;
+}
+
+.gallary_icon_1 {
+    background-image: url(img/women.jpg);
+    height: 260px;
+
+}
+
+.gal_ic_all>a {
+    text-decoration: none;
+}
+
+.text_gallary_icon {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 100px;
+}
+
+.categories_gallary {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.text_gallary_icon,
+.categories_gallary {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+
+}
+
+.gallary_icon_2 {
+    background-image: url(img/man.jpg);
+    height: 260px;
+
+}
+
+.gallary_icon_3 {
+    background-image: url(img/kids.jpg);
+    height: 260px;
+}
+
+.gallary_icon_4 {
+    background-image: url(img/accsories.jpg);
+    margin-top: 30px;
+    grid-column: 3 span;
+    height: 180px;
+}
+
+.text_gallary_icon4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 70px;
+}
+
+.zagolovak {
+    text-align: center;
+}
+
+.nazvanie_section2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.text_section2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-bottom: 48px;
+}
+
+.spisok_tovara {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 14.4%;
+}
+
+.karta_tovara {
+    max-width: 360px;
+    background-color: #F8F8F8;
+    position: relative;
+}
+
+
+.karta_tovara:hover .photo_tovara,
+.karta_tovara:hover .photo_tovara_2 {
+    filter: brightness(30%);
+}
+
+.karta_tovara:hover .text_tovar_none {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 37%;
+    color: #fdf9f9;
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px 15px;
+}
+
+.karta_tovara:hover .text_tovar_none:hover {
+    background-color: #5D5D5D;
+}
+
+.text_tovar_none {
+    display: none;
+}
+
+.photo_tovara_2 {
+    background: #F7E4E2;
+}
+
+.opisanie_tovara {
+    padding: 0 18px 0 18px;
+    padding: 0 18px 20px 18px;
+    margin-bottom: 50px;
+}
+
+.photo_dlya_karti2 {
+    margin-left: 30%;
+    padding: 10px 0;
+    background-color: #F7E4E2;
+
+
+}
+
+.nazvanie_tovara {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 25px 0 12px 0;
+}
+
+.text_tovar {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.cena_tovara {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin: 18px 0 0 0;
+}
+
+.button_main {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.button_1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 2px solid #F26376;
+    padding: 14px 38px;
+}
+
+.button_main:hover .button_1 {
+    color: white;
+    background-color: #F26376;
+}
+
+.button_main:active .button_1 {
+    color: #F26376;
+    background-color: white;
+
+}
+
+
+.bonus {
+    background-color: #000000;
+    padding: 103px 230px 103px 230px;
+}
+
+.spisok_bonus {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nazvanie_bonus {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin: 28px 0 16px 0;
+}
+
+.text_bonus {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+    max-width: 360px;
+}
+
+.contact {
+    background-image: url(img/photo\ subscribe.jpg);
+    height: 448px;
+
+}
+
+.contact_inside {
+    display: flex;
+    justify-content: space-between;
+    padding: 87px 230px 156px 230px;
+}
+
+.contact_1 {
+    max-width: 360px;
+    text-align: center;
+}
+
+.text_contact_1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin-top: 40px;
+    margin-top: 30px;
+}
+
+.nazvanie_email_contact {
+    display: block;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40.13px;
+}
+
+.text_email_contact {
+    display: block;
+    margin: 0 0 32px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30.1px;
+}
+
+.nazvanie_email_contact,
+.text_email_contact {
+    font-family: 'Lato';
+    color: #222224;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.email_contact {
+    max-width: 560px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 356px;
+    margin: 0 auto;
+}
+
+.vvod_text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 256px;
+    padding: 16px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    background-color: #E1E1E1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #222224;
+    opacity: 0.67;
+}
+
+.knopka {
+    display: block;
+    padding: 16px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    background-color: #F16D7F;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.knopka:hover {
+    background-color: #fff;
+    color: #F16D7F;
+}
+
+.padval {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 0 24px 0;
+}
+
+.text_date {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.spisok_soc_seti {
+    list-style-type: none;
+    display: flex;
+}
+
+.icon_seti {
+    padding: 10px 0 0 10px;
+    width: 22px;
+    height: 22px;
+    background-color: #F8F8F8;
+    margin-left: 5px;
+}
+
+.icon_seti:hover {
+    background-color: #F26376;
+}
+
+/* !!!!CATALOG PAGE!!!! */
+
+.title {
+    background-color: #F8F3F4;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+}
+
+.title_name {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    padding: 60px 230px;
+}
+
+.spisok_title {
+    display: flex;
+    list-style-type: none;
+    padding: 60px 230px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+
+}
+
+.spisok_title_ssilka {
+    text-decoration: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    margin: 0 5px 0 5px;
+
+}
+
+
+.spisok_title_ssilka:hover {
+    color: #F16D7F;
+}
+
+.option {
+
+    display: flex;
+}
+
+.filter {
+    display: flex;
+    margin: 50px 300px 64px 230px;
+
+}
+
+.filter_option {
+    padding: 50px 0 64px 0;
+}
+
+.filter_arrivals {
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    position: relative;
+    margin-right: 5px;
+
+}
+
+.list_word {
+    display: flex;
+}
+
+.filter_option_word {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    display: flex;
+
+}
+
+.filter_option_word:hover .filter_option_list {
+    display: block;
+}
+
+.filter_option_list {
+    display: none;
+    position: absolute;
+    top: 15px;
+    list-style-type: none;
+}
+
+.steelka_option {
+    margin: 0 30px 0 10px;
+}
+
+.product_list_kart {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 230px 109px 230px;
+}
