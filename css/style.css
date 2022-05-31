@@ -216,11 +216,6 @@
     color: hsl(352, 83%, 69%);
 }
 
-
-.section_2 {
-    margin: 0 230px;
-}
-
 .list_gallary {
     list-style-type: none;
     display: grid;
