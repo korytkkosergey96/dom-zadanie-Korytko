@@ -10,12 +10,16 @@
 
 .nav {
     background-color: black;
+}
+
+.menu_navigation {
+    background-color: black;
 
     display: flex;
     justify-content: space-between;
 }
 
-.znak_1:hover {
+.symbol_1:hover {
     filter: brightness(40%);
 }
 
@@ -40,10 +44,11 @@
 
 .search_button_f:hover .search_button {
     display: block;
+
 }
 
 
-.spisok_assortimenta {
+.list_assortimenta {
     display: none;
     position: absolute;
     background-color: white;
@@ -66,20 +71,20 @@
     display: none;
 }
 
-.menu_vipodauwie_list {
+.menu_drop-down_list {
     margin: 9px 0 24px 0;
     font-weight: bold;
     color: #000000;
     text-transform: uppercase;
 }
 
-.menu_vipodauwie_pynct {
+.menu_drop-down_item {
     margin: 11px 0 11px 0;
     position: relative;
 }
 
-.menu_vipodauwie_pynct_close::before,
-.menu_vipodauwie_pynct_close::after {
+.menu_drop-down_item_close::before,
+.menu_drop-down_item_close::after {
     content: "";
     display: block;
     width: 10px;
@@ -90,12 +95,12 @@
     position: absolute;
 }
 
-.menu_vipodauwie_pynct_close::after {
+.menu_drop-down_item_close::after {
     position: absolute;
     transform: rotate(-45deg);
 }
 
-.menu_vipodauwie_pynct>a {
+.menu_drop-down_item>a {
     list-style-type: none;
     margin: 11px 0 11px 0;
     color: #F16D7F;
@@ -103,45 +108,45 @@
     text-decoration: none;
 }
 
-.pod_pynct {
+.sub-item {
     list-style-type: none;
     padding-left: 20px;
 
 }
 
-.spisok_nav_2:hover .spisok_assortimenta {
+.list_nav_2:hover .list_assortimenta {
     display: block;
 }
 
-.spisok_nav {
+.list_nav {
     display: flex;
     padding: 19px 230px 19px 230px;
 }
 
-.spisok_nav_2 {
+.list_nav_2 {
     display: flex;
     position: relative;
     padding: 19px 230px 19px 230px;
 
 }
 
-.znak_2_picture {
+.symbol_2_picture {
     padding: 10px 0 0 41px;
 }
 
-.znak_3_picture {
+.symbol_3_picture {
     padding-top: 7px;
 }
 
-.znak_4_picture {
+.symbol_4_picture {
     padding: 0 41px 0 41px;
 }
 
-.znak_5 {
+.symbol_5 {
     position: relative;
 }
 
-.znak_5::after {
+.symbol_5::after {
     content: "";
     display: block;
     border-radius: 50%;
@@ -154,13 +159,16 @@
 
 }
 
-.zastavka {
+.screensaver {
     background-color: #F1E4E6;
-    max-width: 1600px;
+
+}
+
+.screensaver_section {
     display: flex;
 }
 
-.picture_zastawka {
+.picture_screensaver {
     width: 50%;
 }
 
@@ -213,7 +221,7 @@
     margin: 0 230px;
 }
 
-.spisok_gallary {
+.list_gallary {
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -222,7 +230,7 @@
 }
 
 .gallary_icon_1 {
-    background-image: url(img/women.jpg);
+    background-image: url(../img/women.jpg);
     height: 260px;
 
 }
@@ -259,18 +267,18 @@
 }
 
 .gallary_icon_2 {
-    background-image: url(img/man.jpg);
+    background-image: url(../img/man.jpg);
     height: 260px;
 
 }
 
 .gallary_icon_3 {
-    background-image: url(img/kids.jpg);
+    background-image: url(../img/kids.jpg);
     height: 260px;
 }
 
 .gallary_icon_4 {
-    background-image: url(img/accsories.jpg);
+    background-image: url(../img/accsories.jpg);
     margin-top: 30px;
     grid-column: 3 span;
     height: 180px;
@@ -286,11 +294,11 @@
     padding-top: 70px;
 }
 
-.zagolovak {
+.headline {
     text-align: center;
 }
 
-.nazvanie_section2 {
+.name_section2 {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -309,7 +317,7 @@
     margin-bottom: 48px;
 }
 
-.spisok_tovara {
+.list_ware {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -317,19 +325,19 @@
     padding: 0 14.4%;
 }
 
-.karta_tovara {
+.card_ware {
     max-width: 360px;
     background-color: #F8F8F8;
     position: relative;
 }
 
 
-.karta_tovara:hover .photo_tovara,
-.karta_tovara:hover .photo_tovara_2 {
+.card_ware:hover .photo_ware,
+.card_ware:hover .photo_ware_2 {
     filter: brightness(30%);
 }
 
-.karta_tovara:hover .text_tovar_none {
+.card_ware:hover .text_ware_none {
     display: block;
     position: absolute;
     top: 35%;
@@ -340,25 +348,25 @@
     padding: 10px 15px;
 }
 
-.karta_tovara:hover .text_tovar_none:hover {
+.card_ware:hover .text_ware_none:hover {
     background-color: #5D5D5D;
 }
 
-.text_tovar_none {
+.text_ware_none {
     display: none;
 }
 
-.photo_tovara_2 {
+.photo_ware_2 {
     background: #F7E4E2;
 }
 
-.opisanie_tovara {
+.description_ware {
     padding: 0 18px 0 18px;
     padding: 0 18px 20px 18px;
     margin-bottom: 50px;
 }
 
-.photo_dlya_karti2 {
+.photo_for_card2 {
     margin-left: 30%;
     padding: 10px 0;
     background-color: #F7E4E2;
@@ -366,7 +374,7 @@
 
 }
 
-.nazvanie_tovara {
+.name_ware {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -377,7 +385,7 @@
     margin: 25px 0 12px 0;
 }
 
-.text_tovar {
+.text_ware {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 300;
@@ -386,7 +394,7 @@
     color: #5D5D5D;
 }
 
-.cena_tovara {
+.price_ware {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -429,14 +437,19 @@
     padding: 103px 230px 103px 230px;
 }
 
-.spisok_bonus {
+.section_bonus {
+    background-color: #000000;
+    padding: 103px 230px 103px 230px;
+}
+
+.list_bonus {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
-.nazvanie_bonus {
+.name_bonus {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -464,6 +477,7 @@
 }
 
 .contact_inside {
+
     display: flex;
     justify-content: space-between;
     padding: 87px 230px 156px 230px;
@@ -486,7 +500,7 @@
     margin-top: 30px;
 }
 
-.nazvanie_email_contact {
+.name_email_contact {
     display: block;
     margin: 0 0 10px 0;
     font-weight: 700;
@@ -502,7 +516,7 @@
     line-height: 30.1px;
 }
 
-.nazvanie_email_contact,
+.name_email_contact,
 .text_email_contact {
     font-family: 'Lato';
     color: #222224;
@@ -524,7 +538,7 @@
     margin: 0 auto;
 }
 
-.vvod_text {
+.input_text {
     display: flex;
     align-items: center;
     width: 100%;
@@ -566,6 +580,10 @@
 
 .padval {
     background-color: #000000;
+
+}
+
+.section_padval {
     display: flex;
     justify-content: space-around;
     padding: 24px 0 24px 0;
@@ -604,7 +622,10 @@
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
+}
 
+.block_title {
+    background-color: #F8F3F4;
 }
 
 .title_name {
@@ -617,7 +638,7 @@
     padding: 60px 230px;
 }
 
-.spisok_title {
+.list_title {
     display: flex;
     list-style-type: none;
     padding: 60px 230px;
@@ -630,7 +651,7 @@
 
 }
 
-.spisok_title_ssilka {
+.list_title_ssilka {
     text-decoration: none;
     font-family: 'Lato';
     font-style: normal;
@@ -643,7 +664,7 @@
 }
 
 
-.spisok_title_ssilka:hover {
+.list_title_ssilka:hover {
     color: #F16D7F;
 }
 
@@ -693,8 +714,15 @@
 
 }
 
+
 .filter_option_word:hover .filter_option_list {
     display: block;
+    z-index: 20;
+    background-color: white;
+}
+
+.drop_window {
+    margin-bottom: 10px;
 }
 
 .filter_option_list {
@@ -702,9 +730,13 @@
     position: absolute;
     top: 15px;
     list-style-type: none;
+    box-shadow: 0 0 5px;
+    width: 80px;
+    height: 90px;
+    padding: 10px;
 }
 
-.steelka_option {
+.arrow_option {
     margin: 0 30px 0 10px;
 }
 
